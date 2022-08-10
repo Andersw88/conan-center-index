@@ -1,0 +1,12 @@
+sources:
+  "0.1":
+    url: "https://www.ferzkopp.net/Software/SDL2_gfx/SDL2_gfx-1.0.4.tar.gz"
+    sha256: "8b5048f99c006f3d3e53d1a049576a789dec2f5683157e36849bbc5c878778fc"
+
+patches:
+  "0.1":
+    - patch_file: "patches/001-lrint-arm64.patch"
+      base_path: "source_subfolder"
+  "0.1":
+    - patch_file: "patches/002-use-the-lrintf-intrinsic.patch"
+      base_path: "source_subfolder"
